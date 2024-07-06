@@ -7,7 +7,7 @@ type ContentBlockProps = {
 export const ContentBlock = (props: ContentBlockProps) => {
   return (
     <article className=" w-full px-[9vw]">
-      <section className="container">
+      <section className="w-full ">
         <section
           className={`flex ${
             props.imgPosition === "right"
