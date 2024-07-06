@@ -17,8 +17,9 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "modules/*": ["src/modules/*"]
+      "modules/*": ["src/modules/*"],
+      "pages/*": ["src/pages/*"]
     }
   },
-  "include": ["src", "custom.d.ts", "tailwind.config.js"],
+  "include": ["src", "custom.d.ts", "tailwind.config.js"]
 }
