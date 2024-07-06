@@ -18,6 +18,10 @@ const routes = [
     element: <Integrations />,
     path: "/integrations",
   },
+  {
+    element: <About />,
+    path: "/about",
+  },
 ];
 
 const AppRoutes = () => {
