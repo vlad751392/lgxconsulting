@@ -34,6 +34,10 @@ export default {
         '0%': { transform: 'translateX(100%)', opacity: '0' },
         '100%': { transform: 'translateX(0)', opacity: '1' },
       },
+      appearsFromBottom: {
+        '0%': { transform: 'translateY(80%)', opacity: '0' },
+        '100%': { transform: 'translateY(0)', opacity: '1' },
+      },
       textUnderlineAnimation: {
         '0%': { transform: 'translateX(-100%)' },
         '100%': { transform: 'translateX(0)' },
@@ -42,6 +46,7 @@ export default {
     animation: {
       'scale': 'scale 3s linear',
       'appearsFromRight': 'appearsFromRight 3s linear',
+      'appearsFromBottom': 'appearsFromBottom 0.3s linear',
       'textUnderlineAnimation': 'textUnderlineAnimation 2s forwards',
     }
   },

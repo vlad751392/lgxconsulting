@@ -7,7 +7,7 @@ const MainLayout = ({ children }) => {
   return (
     <div className="pt-24 w-full pb-12">
       <Header />
-      <div className="px-8 mx-auto my-0">{children}</div>|
+      <div className="mx-auto my-0">{children}</div>|
       <Footer />
     </div>
   );
