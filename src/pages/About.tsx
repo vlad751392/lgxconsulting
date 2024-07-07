@@ -1,10 +1,5 @@
-import React, { useState } from "react";
-import { ShippingSolutions } from "modules/ShippingSolutions";
-import { AboutPlatform } from "modules/AboutPlatform";
-import { BannerBlock } from "modules/BannerBlock";
-import { StartShipping } from "modules/StartShipping";
-import joinus from "../assets/jpeg/joinus.jpg";
 import { ContentBlock } from "modules/ContentBlock";
+import joinus from "../assets/jpeg/joinus.jpg";
 
 export const About = () => {
   return (
