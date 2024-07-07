@@ -1,9 +1,13 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
-import { Home } from "../pages/Home";
-import { About } from "../pages/About";
-import MainLayout from "../modules/MainLayout";
+import Fulfilment from "pages/Fulfilment";
 import Integrations from "pages/Integrations";
+import MainLayout from "../modules/MainLayout";
+import { About } from "../pages/About";
+import { Home } from "../pages/Home";
+import Negotiations from "pages/Negotiations";
+import Shipping from "pages/Shipping";
+import Forwarding from "pages/Forwarding";
 
 const routes = [
   {
@@ -21,6 +25,22 @@ const routes = [
   {
     element: <About />,
     path: "/about",
+  },
+  {
+    element: <Fulfilment />,
+    path: "/fulfilment",
+  },
+  {
+    element: <Forwarding />,
+    path: "/forwarding",
+  },
+  {
+    element: <Shipping />,
+    path: "/shipping",
+  },
+  {
+    element: <Negotiations />,
+    path: "/negotiations",
   },
 ];
 
