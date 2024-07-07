@@ -43,9 +43,22 @@ h1 {
   line-height: 1.1;
 }
 
-.anim-delay {
+.animation-delay {
   animation-delay: 2000ms;
 }
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animation-delay-900 {
+  animation-delay: 900ms;
+}
+
 
 button {
   border-radius: 8px;
@@ -77,4 +90,144 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.list-dot > li::before {
+  content: ".";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  line-height: 0;
+  font-size: 26px;
+}
+
+.list-dot > li {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  padding-left: 30px;
+}
+
+.staircase-container {
+  position: relative;
+}
+
+.staircase-text {
+  font-size: 17px;
+  transition: opacity 0.5s ease; /* Добавляем плавный переход */
+}
+
+.staircase-container:hover .staircase-text {
+  opacity: 1;
+}
+
+.staircase-text {
+  display: flex;
+}
+
+.staircase-text {
+  font-weight: bold;
+  display: flex;
+}
+
+.staircase-text span {
+  animation: none; /* Отключаем анимацию по умолчанию */
+}
+
+.staircase-text:hover span {
+  opacity: 0;
+  animation: staircase 0.4s forwards;
+}
+
+.staircase-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.staircase-text span:nth-child(2) {
+  animation-delay: 0.02s;
+}
+
+.staircase-text span:nth-child(3) {
+  animation-delay: 0.04s;
+}
+
+.staircase-text span:nth-child(4) {
+  animation-delay: 0.06s;
+}
+
+.staircase-text span:nth-child(5) {
+  animation-delay: 0.08s;
+}
+
+.staircase-text span:nth-child(6) {
+  animation-delay: 0.1s;
+}
+
+.staircase-text span:nth-child(7) {
+  animation-delay: 0.12s;
+}
+
+.staircase-text span:nth-child(8) {
+  animation-delay: 0.14s;
+}
+
+.staircase-text span:nth-child(9) {
+  animation-delay: 0.16s;
+}
+
+.staircase-text span:nth-child(10) {
+  animation-delay: 0.18s;
+}
+
+.staircase-text span:nth-child(11) {
+  animation-delay: 0.2s;
+}
+
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.animated-text span {
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-text {
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-text span span {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  animation: slideUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes staircase {
+  from {
+    transform: translateY(20px);
+  }
+  70% {
+      opacity: 1;
+      transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
 }

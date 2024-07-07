@@ -1,29 +1,35 @@
 type ContentBlockProps = {
   imgPosition: "left" | "right";
   img: string;
+  imgWidth: number
+  imgHeight: number
   children: React.ReactNode;
 };
 
 export const ContentBlock = (props: ContentBlockProps) => {
   return (
-    <article className=" w-full px-[9vw]">
-      <section className="w-full ">
+    <article className="container xl:max-w-[1245px] my-7">
         <section
           className={`flex ${
             props.imgPosition === "right"
-              ? "flex-col-reverse xl1000:flex-row-reverse"
-              : "flex-col xl1000:flex-row"
-          }  gap-[30px]  justify-between 
+              ? "md:flex-row-reverse flex-col"
+              : "md:flex-row flex-col"
+          }  gap-[30px] items-center justify-between 
           `}
         >
+          <div className="md:w-2/4 w-3/4 pb-5 sm:pb-0 flex justify-center">
           <img
-            className={` w-[100%] xl1000:w-[40vw] `}
+            className={` `}
+            width={props.imgHeight}
+            height={props.imgHeight}
             src={props.img}
             alt="Icon"
           />
-          <div className="w-[100%] xl1000:w-[40%]">{props.children}</div>
+          </div>
+          <div className="md:w-2/4 flex justify-center sm:justify-normal">
+          {props.children}
+          </div>
         </section>
-      </section>
     </article>
   );
 };
