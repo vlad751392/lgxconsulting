@@ -10,6 +10,7 @@ import Shipping from "pages/Shipping";
 import LtlShipping from "pages/LtlShipping";
 import Pricing from "pages/Pricing";
 import Forwarding from "pages/Forwarding";
+import TermsOfService from "pages/TermsOfService";
 
 const routes = [
   {
@@ -51,6 +52,10 @@ const routes = [
   {
     element: <Negotiations />,
     path: "/negotiations",
+  },
+  {
+    element: <TermsOfService />,
+    path: "/terms-of-service",
   },
 ];
 
