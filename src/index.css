@@ -51,14 +51,30 @@ h1 {
   animation-delay: 300ms;
 }
 
+.animation-delay-300 span{
+  animation-delay: 200ms !important;
+}
+
 .animation-delay-600 {
   animation-delay: 600ms;
+}
+.animation-delay-600 span{
+  animation-delay: 300ms !important;
 }
 
 .animation-delay-900 {
   animation-delay: 900ms;
 }
+.animation-delay-900 span{
+  animation-delay: 400ms !important;
+}
 
+.animation-delay-1200 {
+  animation-delay: 900ms;
+}
+.animation-delay-1200 span{
+  animation-delay: 400ms !important;
+}
 
 button {
   border-radius: 8px;
@@ -102,6 +118,25 @@ button:focus-visible {
 }
 
 .list-dot > li {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  padding-left: 30px;
+}
+
+.line-list> li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  line-height: 0;
+  font-size: 26px;
+  width: 13px;
+  height: 1px;
+  background-color: #016AF4;
+}
+
+.line-list> li {
   position: relative;
   margin-bottom: 10px;
   line-height: 1.3em;
@@ -230,4 +265,94 @@ button:focus-visible {
     opacity: 1;
     transform: translateY(0px);
 }
+}
+
+.svg-container {
+  /* position: absolute;
+  left: 0;
+  width: 100%;
+  top: auto;
+  height: 30%;
+  bottom: -20%; */
+}
+
+.svg-container::before {
+  content: '';
+  /* margin-left: 0.5rem; */
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 91%;
+  width: 100%;
+  height: 30%;
+  z-index: 1;
+  background-color: white;
+  animation: slide-in 2s ease-in-out forwards alternate;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%); /* Пример анимации, сдвигаем вправо на 1rem */
+  }
+}
+
+.react-parallax {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 500px;
+}
+
+/* Добавьте этот CSS-код в ваш файл стилей */
+
+.burger-menu {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: black;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-menu-open .burger-top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu-open .burger-middle {
+  opacity: 0;
+}
+
+.burger-menu-open .burger-bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu-container {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  z-index: 50;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.translate-x-full {
+  transform: translateX(100%);
 }

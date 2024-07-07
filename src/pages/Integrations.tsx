@@ -6,8 +6,8 @@ export const Integrations = () => {
   return (
     <article className="flex flex-col items-center">
       <TopBlock />
-      {/*<ParallaxBlock />
-      <BrandCarts /> */}
+      {/* <ParallaxBlock /> */}
+      {/*<BrandCarts /> */}
       
     </article>
   );

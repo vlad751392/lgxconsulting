@@ -1,117 +1,144 @@
-import { FC } from "react";
-// import {  useForm } from "react-hook-form";
-
-// import cn from "classnames";
-// import axios from "axios";
-import telegram from '../../assets/svg/tg-button-icon.svg';
-
-export const JoinUs: FC = () => {
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   formState: { errors },
-  //   reset,
-  // } = useForm();
-  // const [modalIsOpen, setIsOpen] = useState(false);
-  // const [reqError, setReqError] = useState(false);
-  // const strapiURL = import.meta.env.VITE_STRAPI_URL 
-
-  // function openModal() {
-  //   setIsOpen(true);
-  // }
-
-  // const customStyles = {
-  //   content: {
-  //     top: '10%',
-  //     left: '50%',
-  //     right: 'auto',
-  //     bottom: 'auto',
-  //     marginRight: '-50%',
-  //     transform: 'translate(-50%, -50%)',
-  //     background: '#000',
-  //     border: '2px solid #5D4FFF'
-  //   },
-  // };
-
-  // function closeModal() {
-  //   setIsOpen(false);
-  // }
+import { FC, useState } from "react";
+import { useForm } from "react-hook-form";
+import cn from "classnames";
+import Button from "src/components/Button";
 
 
+export const JoinForm: FC = () => {
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const [reqError, setReqError] = useState(false);
 
-//   const onSubmit = (data :any) => {
-    
-//     console.log(data);
-    
+  const onSubmit = (data: any) => {
+    console.log(data);
+    reset();
+  };
 
-// // Данные для отправки
-// const bearerToken = import.meta.env.VITE_STRAPI_TOKEN;
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
-// const data1 = {
-//   "data": {
-//     "Email": data.Email
-//   }  
-// };
-
-// // Запрос с заголовком Bearer токена
-// axios.post( `${strapiURL}/api/orbiton-users-emails`, data1, {
-//   headers: {
-//     'Authorization': `Bearer ${bearerToken}`,
-//     'Content-Type': 'application/json'
-//     // Другие заголовки при необходимости
-//   }
-// })
-//   .then(response => {
-//     console.log('Успешный ответ:', response.data);
-//     setIsOpen(true);
-//     setTimeout(() => {
-//       setIsOpen(false); // Через 3 секунды устанавливаем isOpen в false
-//   }, 3000); 
-//   })
-//   .catch(error => {
-//     console.error('Ошибка запроса:', error);
-//     setReqError(true);
-//     setTimeout(() => {
-//       setReqError(false); // Через 3 секунды устанавливаем isOpen в false
-//   }, 3000); 
-//   });
-
-//   reset();
-
-//   }
-//   const [formSubmitted, setFormSubmitted] = useState(false);
-
-//   const handleButtonClick = () => {
-//     setFormSubmitted(true); 
-//     setTimeout(() => {
-//       setFormSubmitted(false);
-//     }, 500);
-//   };
+  const handleButtonClick = () => {
+    setFormSubmitted(true);
+    setTimeout(() => {
+      setFormSubmitted(false);
+    }, 500);
+  };
 
   return (
-    
-    <section className="mx-auto w-full sm:w-fit join-us flex items-center flex-col gap-6 mb-5 sm:mb-0">
+    <section className="w-2/4 bg-gray-regular flex items-center flex-col gap-6 mb-5 sm:mb-0 rounded-3xl">
+      <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col w-full py-10 px-14 text-base">
+      <p className="pb-4 font-bold">Name</p>
+        <div className="flex gap-3 py-2.5">
+            
+        <div className="flex flex-col w-2/4">
+          
+          <input
+            type="text"
+            id="firstName"
+            {...register("firstName", { required: true })}
+            className={cn("border  outline-none focus-visible:border-blue-regular px-3 py-[6px]", { "border-[#cc0000]": errors.firstName})}
+          />
+          <label htmlFor="firstName" className="text-[13px] font-bold">First</label>
+          {errors.firstName && <span className="text-[#990000] text-[12px]">This field is required</span>}
+        </div>
 
-    <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center items-center gap-2">
-        <input
-          type="text"
-          placeholder="e-mail"
-          {...register("Email", { required: true, pattern: /^\S+@\S+$/i })}
-          className={cn("w-[236px]", {
-            "invalid-input": errors.Email && formSubmitted,
-          })}
-        />
+        <div className="flex flex-col w-2/4">
+          
+          <input
+            type="text"
+            id="lastName"
+            {...register("lastName", { required: true })}
+            className={cn("border outline-none focus-visible:border-blue-regular px-3 py-[6px]", { "border-[#cc0000]": errors.lastName })}
+          />
+          <label htmlFor="lastName" className="text-[13px] font-bold">Last</label>
+          {errors.lastName && <span className="text-red-500">This field is required</span>}
+        </div>
+        </div>
+        <div className="flex flex-col py-2.5">
+          <label className="pb-4 font-bold" htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
+            className={cn("border outline-none focus-visible:border-blue-regular px-3 py-[6px]", { "invalid-input": errors.email && formSubmitted })}
+          />
+          {errors.email && <span className="text-red-500">This field is required</span>}
+        </div>
+
+        <div className="flex flex-col py-2.5">
+          <label className="pb-4 font-bold" htmlFor="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            {...register("phone", { required: true })}
+            className={cn("border outline-none focus-visible:border-blue-regular px-3 py-[6px] ", { "invalid-input": errors.phone && formSubmitted })}
+          />
+          {errors.phone && <span className="text-red-500">This field is required</span>}
+        </div>
+
+        <div className="flex flex-col py-2.5">
+          <label className="pb-4 font-bold" htmlFor="companyWebsite">Company Website</label>
+          <input
+            type="url"
+            id="companyWebsite"
+            {...register("companyWebsite", { required: true })}
+            className={cn("border outline-none focus-visible:border-blue-regular px-3 py-[6px]", { "invalid-input": errors.companyWebsite && formSubmitted })}
+          />
+          {errors.companyWebsite && <span className="text-red-500">This field is required</span>}
+        </div>
+
+        <div className="flex flex-col py-2.5">
+          <label className="pb-4 font-bold">Monthly Shipping Volume</label>
+          <div className="flex gap-4">
+            <div className="text-base font-bold">
+              <input className="mr-3" type="radio" id="lessThan100" value="< 100" {...register("monthlyShippingVolume", { required: true })} />
+              <label htmlFor="lessThan100">Less than 100</label>
+            </div>
+            <div className="text-base font-bold">
+              <input className="mr-3" type="radio" id="100to500" value="100 - 500" {...register("monthlyShippingVolume", { required: true })} />
+              <label htmlFor="100to500">100 - 500</label>
+            </div>
+            <div className="text-base font-bold">
+              <input className="mr-3" type="radio" id="500to1k" value="500 - 1k" {...register("monthlyShippingVolume", { required: true })} />
+              <label htmlFor="500to1k">500 - 1k</label>
+            </div>
+            <div className="text-base font-bold">
+              <input className="mr-3" type="radio" id="1kPlus" value="1k+" {...register("monthlyShippingVolume", { required: true })} />
+              <label htmlFor="1kPlus">1k+</label>
+            </div>
+          </div>
+          {errors.monthlyShippingVolume && <span className="text-red-500">This field is required</span>}
+        </div>
+
+        <div className="flex flex-col py-2.5">
+          <label className="pb-4 font-bold">Average Shipping Weight</label>
+          <div className="flex gap-4">
+            <div className="text-base font-bold">
+              <input className="mr-3" type="radio" id="lessThan1lb" value="< 1 lbs." {...register("averageShippingWeight", { required: true })} />
+              <label htmlFor="lessThan1lb">Less than 1 lbs.</label>
+            </div>
+            <div className="text-base font-bold">
+              <input className="mr-3" type="radio" id="1to5lbs" value="1 - 5 lbs." {...register("averageShippingWeight", { required: true })} />
+              <label htmlFor="1to5lbs">1 - 5 lbs.</label>
+            </div>
+            <div className="text-base font-bold">
+              <input className="mr-3" type="radio" id="5to20lbs" value="5 - 20 lbs." {...register("averageShippingWeight", { required: true })} />
+              <label htmlFor="5to20lbs">5 - 20 lbs.</label>
+            </div>
+            <div className="text-base font-bold">
+              <input className="mr-3" type="radio" id="20pluslbs" value="20+ lbs." {...register("averageShippingWeight", { required: true })} />
+              <label htmlFor="20pluslbs">20+ lbs.</label>
+            </div>
+          </div>
+          {errors.averageShippingWeight && <span className="text-red-500">This field is required</span>}
+        </div>
 
         <button
           type="submit"
           onClick={handleButtonClick}
-          className="text-white font-semibold px-8 py-2.5 rounded-lg font-lato"
+          className="text-white font-semibold px-8 py-2.5 rounded-lg font-lato bg-blue-regular"
         >
           Join Now
         </button>
       </form>
-
     </section>
-    
   );
 };

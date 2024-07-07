@@ -25,11 +25,11 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
   return (
     <div ref={ref} className={`${className} relative overflow-hidden group min-h-[120px]`}>
       {/* Маппим каждую часть текста */}
-      <p  className={`relative  ${isVisible ? 'animated-text animation-delay-900 opacity-100' : 'opacity-0'}`}>
+      <p  className={`relative  ${isVisible ? 'animated-text opacity-100' : 'opacity-0'}`}>
       {parts.map((part, index) => (
         < >
           {/* Оборачиваем каждую часть в <div> */}
-          <span key={index} dangerouslySetInnerHTML={{ __html: part + (index < parts.length - 1 ? '</span>' : '') }} />
+          <span className={`animation-delay-${(index + 1) * 300}`} key={index} dangerouslySetInnerHTML={{ __html: part + (index < parts.length - 1 ? '</span>' : '') }} />
           </>
       ))}
       </p>

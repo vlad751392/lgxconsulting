@@ -5,16 +5,10 @@ import IconsList from "src/components/IconsList";
 import { iconsList } from "modules/configs/IconsListConfig";
 import { StartShipping } from "modules/StartShipping";
 import BannerBlock from "modules/BannerBlock";
-import TopContentBlock from "modules/TopContentBlock";
-import ParallaxBlock from "modules/ParallaxBlock";
-import Bg from '../assets/jpeg/hero-3pl.jpg'
 
-
-const Fulfilment = () => {
+const Shipping = () => {
   return (
     <article className="flex flex-col items-center">
-      <TopContentBlock title="3PL and Warehousing" text="<span>Inventory Management and Minimize</span><span>Holding Costs with the Expertise of 3PL</span><span>Services, Ensuring Seamless Warehousing</span><span>and Distribution.</span>" />
-      <ParallaxBlock img={Bg} />
       <ContentBlock img={comprehensive} imgPosition="right">
         <section className="flex flex-col gap-6">
           <h2 className="text-5xl font-bold">
@@ -76,4 +70,4 @@ const Fulfilment = () => {
   );
 };
 
-export default Fulfilment;
+export default Shipping;

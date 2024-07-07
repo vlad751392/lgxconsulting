@@ -7,6 +7,8 @@ import { About } from "../pages/About";
 import { Home } from "../pages/Home";
 import Negotiations from "pages/Negotiations";
 import Shipping from "pages/Shipping";
+import LtlShipping from "pages/LtlShipping";
+import Pricing from "pages/Pricing";
 import Forwarding from "pages/Forwarding";
 
 const routes = [
@@ -17,6 +19,10 @@ const routes = [
   {
     element: <About />,
     path: "login",
+  },
+  {
+    element: <Pricing />,
+    path: "/pricing",
   },
   {
     element: <Integrations />,
@@ -33,6 +39,10 @@ const routes = [
   {
     element: <Forwarding />,
     path: "/forwarding",
+  },
+  {
+    element: <LtlShipping />,
+    path: "/ltlShipping",
   },
   {
     element: <Shipping />,

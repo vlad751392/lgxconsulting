@@ -2,7 +2,11 @@ import Bg from '../assets/jpeg/freeway.jpg'
 import BannerImagePhone from '../assets/jpeg/mobile-fashion-brand.jpg'
 import { Parallax } from "react-parallax";
 
-export const ParallaxBlock = () => {
+interface AnimatedTextProps {
+    img: string;
+  }
+
+export const ParallaxBlock: React.FC<AnimatedTextProps> = ({ img }) => {
     const insideStyles = {
         background: "white",
         padding: 20,
@@ -13,16 +17,14 @@ export const ParallaxBlock = () => {
       };
 
     return (
-      <article className=" my-52 container">
+      <article className="xl:max-w-[1245px] rounded-3xl  opacity-0 animate-appearsFromBottomLong my-8 container">
 
         <Parallax
           className=""
-          bgImage={Bg}
-          strength={600}
+          bgImage={img}
+          strength={300}    
         >
-            <div className='h-[890px]'>
-                <img src={Bg} className=' opacity-0' alt="" />
-            </div>
+            <div style={{ height: 400 }} />
         </Parallax>
       </article>
     );

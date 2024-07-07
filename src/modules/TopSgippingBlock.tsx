@@ -14,7 +14,7 @@ interface AnimatedTextProps {
     divClass?: string;
 }
 
-export const TopBlock = () => {
+export const TopSgippingBlock = () => {
     const [isVisible, setIsVisible] = useState(false);
     const { ref, inView } = useInView({
         triggerOnce: true, // чтобы анимация сработала только один раз
@@ -28,22 +28,18 @@ export const TopBlock = () => {
     }, [inView]);
 
     return (
-        <section ref={ref} className=" flex flex-col lg:flex-row mt-24 justify-center lg:justify-between container overflow-hidden xl:max-w-[1245px] items-center">
+        <section ref={ref} className="flex flex-col lg:flex-row mt-24 justify-center lg:justify-between container overflow-hidden xl:max-w-[1245px] items-center">
             <div className={`overflow-hidden text-center lg:w-3/5 lg:text-left  ${isVisible ? 'animate-appearsFromBottom' : 'opacity-0'}`} >
                 <div >
-                    <h2 className='font-bold text-[80px] leading-[1.1]'><em className='relative svg-container inline-block whitespace-nowrap leading-none'>Seamless<BlueLine className=" absolute left-0 w-full top-auto h-[30%] bottom-[-20%]" /></em>Integration</h2>
+                    <h2 className='font-bold text-[80px] leading-[1.1]'>Ship with the<em className='relative svg-container inline-block whitespace-nowrap leading-none'>lowest rates<BlueLine className=" absolute left-0 w-full top-auto h-[30%] bottom-[-20%]" /></em></h2>
                 </div>
                 <Button className='mt-[50px] text-[17px] py-[15px] px-[35px]' label='Get Started' />
             </div>
             <div className='flex flex-col self-end lg:w-2/5'>
-            <AnimatedText className='text-center lg:text-left pt-0 md:pt-10 text-2xl pb-10' text='<span>Simplify your shipping operations:</span><span>Integrate our global logistics shipping API</span><span>with your existing techstack.</span>' />
-            <div className={`'max-w-48 mx-auto lg:mx-0 lg:justify-normal ${isVisible ? 'animate-appearsFromBottom' : 'opacity-0'}`}>
-                <LogosList config={logos} logoWidth={40} logoHeight={40}/>
-                <p className='text-center lg:text-left'><span className='font-bold'>60+</span> integrations</p>
-            </div>
+            <AnimatedText className='text-center lg:text-left  text-2xl pb-20' text='<span>Deeply discounted rates with top national</span><span> and global carriers with 60+ integrations.</span>' />
             </div>
         </section>
     );
 };
 
-export default TopBlock;
+export default TopSgippingBlock;

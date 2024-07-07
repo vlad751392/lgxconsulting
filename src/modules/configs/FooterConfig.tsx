@@ -27,7 +27,7 @@ export const ServiceList: FooterList[] = [
   {
     id: 4,
     name: "LTL Shipping",
-    path: "/shipping",
+    path: "/ltlShipping",
     nav: true,
   },
   {
