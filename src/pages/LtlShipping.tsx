@@ -5,10 +5,15 @@ import IconsList from "src/components/IconsList";
 import { iconsList } from "modules/configs/IconsListConfig";
 import { StartShipping } from "modules/StartShipping";
 import BannerBlock from "modules/BannerBlock";
+import TopContentBlock from "modules/TopContentBlock";
+import ParallaxBlock from "modules/ParallaxBlock";
+import Bg from '../assets/jpeg/hero-ltl.jpg'
 
 const Shipping = () => {
   return (
     <article className="flex flex-col items-center">
+      <TopContentBlock title="Maximize Savings with LTL Shipping" text="<span>Streamlined Delivery Solutions for</span><span>eCommerce, D2C, and B2B: Seamless</span><span>Large Parcel Transport.</span>" />
+      <ParallaxBlock img={Bg} />
       <ContentBlock img={comprehensive} imgPosition="right">
         <section className="flex flex-col gap-6">
           <h2 className="text-5xl font-bold">

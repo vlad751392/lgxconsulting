@@ -51,7 +51,7 @@ export default {
     animation: {
       scale: "scale 0.7s forwards",
       appearsFromRight: "appearsFromRight 0.7s forwards",
-      appearsFromBottom: "appearsFromBottom 0.3s linear",
+      appearsFromBottom: "appearsFromBottom 1s forwards",
       appearsFromBottomLong: "appearsFromBottom 1.5s forwards 0.5s",
       textUnderlineAnimation: "textUnderlineAnimation 2s forwards",
     },

@@ -13,8 +13,8 @@ import Button from "src/components/Button";
 export const Home = () => {
   return (
     <article className="flex flex-col items-center">
-      {/* <ShippingSolutions /> */}
-      {/* <HomeLogosList />*/}
+      <ShippingSolutions />
+      <HomeLogosList />
     
       <AboutPlatform /> 
     <ShipRates /> 

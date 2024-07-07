@@ -5,10 +5,15 @@ import IconsList from "src/components/IconsList";
 import { iconsList } from "modules/configs/IconsListConfig";
 import { StartShipping } from "modules/StartShipping";
 import BannerBlock from "modules/BannerBlock";
+import TopContentBlock from "modules/TopContentBlock";
+import ParallaxBlock from "modules/ParallaxBlock";
+import Bg from '../assets/jpeg/hero-negotiations.jpg'
 
 const Negotiations = () => {
   return (
     <article className="flex flex-col items-center">
+      <TopContentBlock title="Shipping Contract Negotiations" text="<span>Unlock Exclusive Cost Savings: Leverage</span><span>Our Expertise to Skillfully Negotiate</span><span>Optimal Discounts with Carriers.</span>" />
+      <ParallaxBlock img={Bg} />
       <ContentBlock img={comprehensive} imgPosition="right">
         <section className="flex flex-col gap-6">
           <h2 className="text-5xl font-bold">

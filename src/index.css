@@ -290,6 +290,19 @@ button:focus-visible {
   animation: slide-in 2s ease-in-out forwards alternate;
 }
 
+.img-container::before {
+  content: '';
+  /* margin-left: 0.5rem; */
+  color: red;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+  animation: slide-in 1s ease-in-out forwards alternate;
+}
+
 @keyframes slide-in {
   0% {
     transform: translateX(0);
