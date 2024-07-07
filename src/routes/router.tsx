@@ -11,6 +11,7 @@ import LtlShipping from "pages/LtlShipping";
 import Pricing from "pages/Pricing";
 import Forwarding from "pages/Forwarding";
 import TermsOfService from "pages/TermsOfService";
+import PrivacyPolicy from "pages/PrivacyPolicy";
 
 const routes = [
   {
@@ -56,6 +57,10 @@ const routes = [
   {
     element: <TermsOfService />,
     path: "/terms-of-service",
+  },
+  {
+    element: <PrivacyPolicy />,
+    path: "/privacy-policy",
   },
 ];
 

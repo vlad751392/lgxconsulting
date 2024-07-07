@@ -1,10 +1,3 @@
-import { ContentBlock } from "modules/ContentBlock";
-import comprehensive from "../assets/jpeg/comprehensive-3pl.jpg";
-import Button from "src/components/Button";
-import IconsList from "src/components/IconsList";
-import { iconsList } from "modules/configs/IconsListConfig";
-import { StartShipping } from "modules/StartShipping";
-import BannerBlock from "modules/BannerBlock";
 
 const TermsOfService = () => {
   return (
@@ -14,10 +7,10 @@ const TermsOfService = () => {
       <p className="text-[17px]">
         BY USING THIS WEBSITE OR PURCHASING ANY SERVICES THROUGH THIS WEBSITE,
         YOU MUST AGREE TO THE FOLLOWING:
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         AGREEMENT BETWEEN CUSTOMER AND AXEL SHIP INC.
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         Our website (“Website”) is provided solely to assist customers in
         comparing, selecting, and purchasing third party courier (each a
@@ -28,7 +21,7 @@ const TermsOfService = () => {
         corporate affiliates. The term “you” refers to the customer visiting the
         Website and/or purchasing third-party courier services through us on
         this Website, or through our partners and customer service agents.
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         This Website is offered to you conditioned upon your acceptance without
         modification of all the terms, conditions, and notices set forth below
@@ -40,13 +33,13 @@ const TermsOfService = () => {
         you agree that the Terms of Use then in force shall apply. If you do not
         agree to the Terms of Use, please do not use or purchase any third-party
         courier services through this Website or our call center agents.
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         Axel Ship serves only as an intermediary between you and Couriers,
         providing you with a platform to order Services, and will not become a
         party to any contract to pick up, transport, ship, deliver, or otherwise
         provide any service beyond simply reselling such Services.
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         Axel Ship may, from time to time, amend or modify these Terms of Use
         (these “Terms”) and post the amended or modified Terms on the Website,
@@ -57,7 +50,7 @@ const TermsOfService = () => {
         our sole discretion to deny access to anyone to this Website and the
         services we offer, at any time and for any reason, including, but not
         limited to, for violation of these Terms of Use.
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         By accessing, using, or obtaining any content, data, materials,
         information, or Services through the Website, you (i) agree to be bound
@@ -68,19 +61,19 @@ const TermsOfService = () => {
         use this Website to make legitimate purchases of courier services for
         legal shipping of documents and goods on your own behalf or for another
         person for whom you are legally authorized to act (a “Third Party”).
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         By accepting these Terms, you are also accepting the Data Processing
         Addendum which is included by reference in these Terms of Use. The Data
         Processing Addendum defines our specific legal obligations under the
         data protection laws of the European Union and your agreement with
         respect to the terms governing the processing of your personal data.
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         For customers located in the European Union, your acceptance of the
         Terms of Use and the Data Processing Addendum will be by separate
         acknowledgement.
-      </p>{" "}
+      </p>
       <p className="text-[17px]">
         If you are located in the European Union and do not see a request for an
         acknowledgement of the Terms of Use and Data Processing Addendum (which
@@ -88,7 +81,7 @@ const TermsOfService = () => {
         or the through your use of an onion browser), you may request an
         acknowledgement or separate PDF copy of the Data Processing Agreement by
         contacting our customer support via chat, email, or phone.
-      </p>{" "}
+      </p>
       <p className="text-[17px]">DISCLAIMER OF WARRANTY</p>
     </article>
   );

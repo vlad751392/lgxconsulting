@@ -29,7 +29,8 @@ export const Footer = () => {
         <section className="flex font-bold sm:flex-row flex-col text-[13px] gap-[38%] py-6 border-t border-gray-secondary">
           <p className="pb-5 sm:pb-0">© 2024 Axel Ship Inc.</p>
           <p>
-            <a href="/terms-of-service">Terms Of Service</a> • Privacy Policy
+            <a href="/terms-of-service">Terms Of Service</a> •{" "}
+            <a href="/privacy-policy">Privacy Policy</a>
           </p>
         </section>
       </section>
