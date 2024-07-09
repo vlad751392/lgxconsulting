@@ -28,15 +28,15 @@ export const TopSgippingBlock = () => {
     }, [inView]);
 
     return (
-        <section ref={ref} className="flex flex-col lg:flex-row mt-24 justify-center lg:justify-between container overflow-hidden xl:max-w-[1245px] items-center">
-            <div className={`overflow-hidden text-center lg:w-3/5 lg:text-left  ${isVisible ? 'animate-appearsFromBottom' : 'opacity-0'}`} >
+        <section ref={ref} className="flex flex-col lg:flex-row mt-24 justify-center lg:justify-between container overflow-hidden xl:max-w-[1100px] 2xl:max-w-[1245px] items-center">
+            <div className={`overflow-hidden text-center md:pb-8 lg:w-3/5 lg:text-left  ${isVisible ? 'animate-appearsFromBottom' : 'opacity-0'}`} >
                 <div >
-                    <h2 className='font-bold text-[80px] leading-[1.1]'>Ship with the<em className='relative svg-container inline-block whitespace-nowrap leading-none'>lowest rates<BlueLine className=" absolute left-0 w-full top-auto h-[30%] bottom-[-20%]" /></em></h2>
+                    <h2 className='font-bold text-[52px] sm:text-[62px]  leading-[1.1]'>Ship with the<em className='relative svg-container inline-block whitespace-nowrap leading-none'>lowest rates<BlueLine className=" absolute left-0 w-full top-auto h-[30%] bottom-[-20%]" /></em></h2>
                 </div>
-                <Button className='mt-[50px] text-[17px] py-[15px] px-[35px]' label='Get Started' />
+                <Button nav='/pricing' className='mt-[50px] text-[17px] py-[15px] px-[35px]' label='sm:px-6 px-0' />
             </div>
             <div className='flex flex-col self-end lg:w-2/5'>
-            <AnimatedText className='text-center lg:text-left  text-2xl pb-20' text='<span>Deeply discounted rates with top national</span><span> and global carriers with 60+ integrations.</span>' />
+            <AnimatedText className='text-center lg:text-left text-xl md:text-2xl  pt-10 sm:pt-0  sm:pb-20' text='<span>Deeply discounted rates with top national</span><span> and global carriers with 60+ integrations.</span>' />
             </div>
         </section>
     );

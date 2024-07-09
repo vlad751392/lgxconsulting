@@ -1,24 +1,24 @@
 const PrivacyPolicy = () => {
   return (
-    <article className="flex px-[5%] flex-col xl:pr-[30%] xl:pl-[10%] pt-[5%] gap-14">
+    <article className="flex mx-auto xl:max-w-[1100px] 2xl:max-w-[1245px] flex-col py-28 gap-14 sm:px-0 px-6">
       <h2 className="text-5xl font-bold">Privacy Policy</h2>
-      <p className="text-[17px] ">Last Modified: May 2, 2021</p>
+      <p className="text-[17px] ">Last Modified: July 9, 2024</p>
       <p className="text-[17px]">
-        This is the Privacy Policy of Axel Ship Inc. (“Axel Ship”). Our Privacy
+        This is the Privacy Policy of LGX Consulting Inc. (“LGX Consulting”). Our Privacy
         Policy describes how we protect and handle information we collect about
         you. It is also intended to comply with all the directives of the
         European Union’s General Data Protection Regulation, the California
         Consumer Privacy Protection Act of 2018, the EU-U.S. and Swiss-U.S.
         Privacy Shield Compliance treaties, and the Children’s Online Privacy
         Protection Act as each of those laws are updated and added to over time.
-        This Privacy Policy describes the privacy practices of Axel Ship and its
+        This Privacy Policy describes the privacy practices of LGX Consulting and its
         corporate affiliates, meaning companies related by common ownership or
-        control to Axel Ship (“us,” “we,” “our”) who may be involved and
+        control to LGX Consulting (“us,” “we,” “our”) who may be involved and
         responsible for collecting and maintaining certain information collected
         about you.
       </p>
       <p className="text-[17px]">
-        AGREEMENT BETWEEN CUSTOMER AND AXEL SHIP INC.
+        AGREEMENT BETWEEN CUSTOMER AND LGX Consulting INC.
       </p>
       <p className="text-[17px]">
         Our website (“Website”) is provided solely to assist customers in
@@ -26,22 +26,22 @@ const PrivacyPolicy = () => {
         “Courier”) services (“Services”) for the legal shipping of documents and
         goods nationally and internationally or otherwise transacting business
         with courier services, and for no other purposes. The terms “we,” “us,”
-        “our” and “Axel Ship” refer to Axel Ship Inc., and its subsidiaries and
+        “our” and “LGX Consulting” refer to LGX Consulting Inc., and its subsidiaries and
         corporate affiliates. The term “you” refers to the customer visiting the
         Website and/or purchasing third-party courier services through us on
         this Website, or through our partners and customer service agents.
       </p>
       <p className="text-[17px]">
-        This is the Privacy Policy of Axel Ship Inc. (“Axel Ship”). Our Privacy
+        This is the Privacy Policy of LGX Consulting Inc. (“LGX Consulting”). Our Privacy
         Policy describes how we protect and handle information we collect about
         you. It is also intended to comply with all the directives of the
         European Union’s General Data Protection Regulation, the California
         Consumer Privacy Protection Act of 2018, the EU-U.S. and Swiss-U.S.
         Privacy Shield Compliance treaties, and the Children’s Online Privacy
         Protection Act as each of those laws are updated and added to over time.
-        This Privacy Policy describes the privacy practices of Axel Ship and its
+        This Privacy Policy describes the privacy practices of LGX Consulting and its
         corporate affiliates, meaning companies related by common ownership or
-        control to Axel Ship (“us,” “we,” “our”) who may be involved and
+        control to LGX Consulting (“us,” “we,” “our”) who may be involved and
         responsible for collecting and maintaining certain information collected
         about you.
       </p>
@@ -72,13 +72,13 @@ const PrivacyPolicy = () => {
             Services useful.
           </p>
           <p className="text-[17px]">
-            This Privacy Policy describes how Axel Ship collects, uses, shares
+            This Privacy Policy describes how LGX Consulting collects, uses, shares
             and secures the personal information you provide. It also describes
             your choices regarding use, access and correction of your personal
             information. We do not sell or share your Personal Information with
             third parties for their own commercial uses. We only transfer such
             information necessary to the United State Postal Service, selected
-            third-party couriers and service providers to Axel Ship as necessary
+            third-party couriers and service providers to LGX Consulting as necessary
             to accomplish the purchase of postage and creation of shipping
             labels.
           </p>
@@ -96,7 +96,7 @@ const PrivacyPolicy = () => {
             in, pay fees, purchase or otherwise use a Service, call us for
             support, or give us feedback. We may also get information from other
             companies or third parties, such as when you sync a third-party
-            account or service with your Axel Ship Account, or when we may use
+            account or service with your LGX Consulting Account, or when we may use
             service providers to supplement the Personal Information you give us
             (e.g., validate your mailing address) to help us maintain the
             accuracy of your data and provide you with better service. We will
@@ -151,7 +151,7 @@ const PrivacyPolicy = () => {
             information about your computer configuration to resolve questions
             you may have about our Services and to follow up with you about your
             experience. We also offer various Internet chat services, for
-            example, to speak with a Axel Ship customer support representative.
+            example, to speak with a LGX Consulting customer support representative.
             Internet Chat transmissions are encrypted but you should not supply
             more Personal Information than is required to address your specific
             issue. A transcript of the session is retained to resolve questions
@@ -181,16 +181,16 @@ const PrivacyPolicy = () => {
             Information we provide to them, only act on our behalf and under our
             instructions, and not use Personal Information for purposes other
             than the product or service they’re providing to us or on our
-            behalf.United States Postal Service (USPS). Axel Ship and its
+            behalf.United States Postal Service (USPS). LGX Consulting and its
             partners are regulated by the USPS. As part of the regulatory
-            relationship, Axel Ship collects certain information about you on
+            relationship, LGX Consulting collects certain information about you on
             behalf of the USPS. The USPS also may send us tracking data from
             their scans of your packages in the mailstream. Our uses for the
             data include informing you about the status of your packages through
             options like USPS Tracking, fraud detection and aggregating the data
             to help the USPS and us provide you with better service. Information
             collected on behalf of USPS is used for their regulatory oversight
-            function and is not used for other purposes.As part of Axel Ship
+            function and is not used for other purposes.As part of LGX Consulting
             providing services of the USPS, the USPS requires that you agree to
             the USPS Privacy Act Statement and to provide information about
             yourself that will be maintained in a Privacy Act System of Records
@@ -210,18 +210,18 @@ const PrivacyPolicy = () => {
             entities aiding us to fulfill the Services (service providers). For
             more information regarding our privacy policies, visit
             www.usps.com/privacypolicy.For more information regarding other
-            specific carrier you may use via the Axel Ship platform, please see
+            specific carrier you may use via the LGX Consulting platform, please see
             the privacy policies provided by each specific carrier you
             select.Third Party Carriers. Use of carrier services via the Axel
-            Ship platform is at your own risk. Axel Ship is not responsible for
+            Ship platform is at your own risk. LGX Consulting is not responsible for
             your use of carrier services. Your use of carrier services is as a
             direct customer of the specific carrier of your choosing and you
             agree to be bound by the terms and conditions of that carrier for
             use of services. By providing information to certain carrier
-            services either directly or through Axel Ship, you understand and
+            services either directly or through LGX Consulting, you understand and
             consent to the collection, use, processing disclosure and transfer
             of such information and acknowledge that the carrier services may
-            have different data protection practices than Axel Ship. Your
+            have different data protection practices than LGX Consulting. Your
             interactions with these service carriers are governed by each
             carrier’s privacy policy.Response to Subpoenas and Other Legal
             Requests. We may share your information with courts, law enforcement
@@ -229,17 +229,17 @@ const PrivacyPolicy = () => {
             belief we’re required or permitted to do so by law, including to
             meet national security or law enforcement requirements, to protect
             our company, or to respond to a court order, subpoena, search
-            warrant, or other law enforcement request.Protection of Axel Ship
+            warrant, or other law enforcement request.Protection of LGX Consulting
             and Others. We may share account information, Personal Information
             and Usage Data when we believe it is appropriate to enforce or apply
             our products’ Terms of Use and other agreements; or protect the
-            rights, property, or safety of Axel Ship, our Services, our users,
+            rights, property, or safety of LGX Consulting, our Services, our users,
             or others. This includes exchanging information with other companies
             and organizations for fraud protection and credit risk reduction.
             This does not include selling, renting, sharing, or otherwise
             disclosing Personal Information of our customers for commercial
             purposes in violation of the commitments set forth in this Privacy
-            Policy. Information Sharing Between Axel Ship Entities. We share
+            Policy. Information Sharing Between LGX Consulting Entities. We share
             your information, including your Personal Information, with and
             among our subsidiaries, except where prohibited by law. Subsidiaries
             means companies related by common ownership or control. The reasons
@@ -260,24 +260,24 @@ const PrivacyPolicy = () => {
           with notice and the opportunity to choose when your Personal
           Information may be shared with other third parties.
           <p className="text-[17px]">
-            Aggregate Date. Axel Ship may collect, use, and distribute
+            Aggregate Date. LGX Consulting may collect, use, and distribute
             statistical information related to the usage of the website,
             Services, or traffic patterns only in aggregate and de-identifiable
             form (“Aggregated Data”). Aggregated Data does not contain any
-            personal information about you, and Axel Ship will not sell personal
+            personal information about you, and LGX Consulting will not sell personal
             information about you to third parties. Aggregated Data may be
             shared with third-parties, but is stripped of all personal
             information and contains information like: the busiest shipping date
             of the year is December 18th and the top shipping destination in the
-            U.S. is the metro NYC area. Axel Ship will own all Aggregated Data.
+            U.S. is the metro NYC area. LGX Consulting will own all Aggregated Data.
           </p>
           <p className="text-[17px]">
-            Linking Other Third Party Services with Your Axel Ship Service.We
+            Linking Other Third Party Services with Your LGX Consulting Service.We
             work with other companies to enhance our services, such as
             integrations to ecommerce platforms, and you may choose to sync,
-            link or connect other third party services with your Axel Ship
-            Service. Sometimes Axel Ship may let you know about the service or
-            product, or another company may let you know about a Axel Ship
+            link or connect other third party services with your LGX Consulting
+            Service. Sometimes LGX Consulting may let you know about the service or
+            product, or another company may let you know about a LGX Consulting
             service or product. If you choose to accept these services,
             providing your consent to either the third party or to us, we may
             exchange your information, including your Personal Information, as
@@ -293,7 +293,7 @@ const PrivacyPolicy = () => {
           <p className="text-[17px]">WHAT YOU CAN DO TO MANAGE YOUR PRIVACY.</p>
           <p className="text-[17px]">
             You can view and edit information that identifies you online through
-            your Axel Ship Service. How you can access and control information
+            your LGX Consulting Service. How you can access and control information
             that identifies you will depend on which Services you use. You have
             a choice about the use of information that identifies you, marketing
             communications you receive from us, and our use of cookies and other
@@ -311,7 +311,7 @@ const PrivacyPolicy = () => {
             your choices when it comes to receiving marketing communications
             from us.You have the following choices if you have been receiving
             marketing communications from us that you no longer wish to receive:
-            Access the opt-out link in any email communication from Axel Ship.
+            Access the opt-out link in any email communication from LGX Consulting.
             Remember that even if you choose not to receive marketing
             communications from us, we will continue to send you mandatory
             service or transactional communications. Cookies and Other Tracking
@@ -319,20 +319,20 @@ const PrivacyPolicy = () => {
             Fulfill your requests for products and services, and improve our
             services. Remind us of who you are on return visits in order to
             deliver to you a better and more personalized service. This cookie
-            is set when you first visit the Axel Ship Site. Estimate our
+            is set when you first visit the LGX Consulting Site. Estimate our
             audience size and measure traffic patterns regarding usage of Axel
-            Ship’s network of Sites. Each browser accessing Axel Ship is given a
+            Ship’s network of Sites. Each browser accessing LGX Consulting is given a
             unique cookie which is then used to determine the extent of repeat
             usage and usage by a registered user versus by an unregistered user.
             If you are uncomfortable having a cookie placed on your system, you
             may elect to turn off the cookie or delete existing cookies in your
-            browser. If you turn off or delete the Axel Ship cookie, you may not
-            be able to access all Axel Ship Services, may have only partial
+            browser. If you turn off or delete the LGX Consulting cookie, you may not
+            be able to access all LGX Consulting Services, may have only partial
             functionality, or the service may not work at all.
           </p>
           <p className="text-[17px]">
             Technologies such as cookies, or similar technologies, are used by
-            Axel Ship and our partners, affiliates, or analytics or service
+            LGX Consulting and our partners, affiliates, or analytics or service
             providers (e.g. online customer support technology providers). These
             technologies are used in analyzing trends, administering the site,
             tracking user movements around the site and to gather demographic
@@ -399,33 +399,33 @@ const PrivacyPolicy = () => {
             communications. We may also continue to use some of your information
             for business purposes and to improve our offerings or in some cases
             to develop new ones. We will retain and use your information as
-            required by applicable regulations and Axel Ship’s records and
+            required by applicable regulations and LGX Consulting’s records and
             information management policies to comply with our legal and
             reporting obligations, resolve disputes, enforce our agreements,
             complete any outstanding transactions and for the detection and
             prevention of fraud. Your Rights to Personal Information. You have
             the following rights to access, update, change, correct or request
             delivery or deletion of Personal Information: Upon request you may
-            contact Axel Ship to confirm whether we maintain, or process on
+            contact LGX Consulting to confirm whether we maintain, or process on
             behalf of a third party, any of your Personal Information and to
             review it in order to verify its accuracy and the lawfulness of our
             processing of such Personal Information. Upon request, you may also
             request that your Personal Information be corrected, amended,
             delivered to you or deleted. In the event you request any
             correction, amendment, delivery or deletion of any of your Personal
-            Information, Axel Ship will comply with such request within
+            Information, LGX Consulting will comply with such request within
             forty-five (45) days. If the circumtances of the request require
-            additional processing time, Axel Ship will notify you of a one-time
+            additional processing time, LGX Consulting will notify you of a one-time
             extension of up to forty-five (45) additional days to comply with
             such request. Please be advised that in certain circumstances, Axel
             Ship may not comply with a request to delete Personal Information if
-            Axel Ship is required to retain such information (i) under
+            LGX Consulting is required to retain such information (i) under
             applicable law or the order of a court or agency of applicable
             jurisdiction, (ii) to prevent or detect security incidents, protect
             against malicious, deceptive, fraudulent, or illegal activity; or
             prosecute those responsible for that activity, or (iii) to complete
             the Services. In the event you request delivery of your Personal
-            Information, Axel Ship will deliver your Personal Infomration by
+            Information, LGX Consulting will deliver your Personal Infomration by
             mail or electronically up to two (2) times in any twelve (12) month
             period free of charge. If provided electronically, the information
             will be in a portable and, to the extent technically feasible,
@@ -477,7 +477,7 @@ const PrivacyPolicy = () => {
             Via the internet: Contact our customer support via chat or email.
           </p>
           <p className="text-[17px]">
-            Via mail: Axel Ship Inc. Attn: Privacy Team 11333 Moorpark st. #44
+            Via mail: LGX Consulting Inc. Attn: Privacy Team 11333 Moorpark st. #44
             Studio City, CA 91602
           </p>
         </li>
@@ -510,7 +510,7 @@ const PrivacyPolicy = () => {
             We do not knowingly collect information from minors.
           </p>
           <p className="text-[17px]">
-            Axel Ship Services are intended for and directed to adults. Our
+            LGX Consulting Services are intended for and directed to adults. Our
             Services are not directed to minors and we do not knowingly collect
             Personal Information from minors. IF YOU ARE UNDER 16 YEARS OLD, YOU
             ARE A MINOR IN MANY JURISDICTIONS.
@@ -522,8 +522,8 @@ const PrivacyPolicy = () => {
           </p>
           <p className="text-[17px]">
             This Privacy Policy, the Terms of Use, and the delivery of the
-            Services by Axel Ship are indented to comply with the your rights
-            and Axel Ship’s duties under the California Consumer Privacy Act of
+            Services by LGX Consulting are indented to comply with the your rights
+            and LGX Consulting’s duties under the California Consumer Privacy Act of
             2018 and the similar consumer protection and data privacy laws of
             various jurisdictions within the United States. We DO NOT share or
             sell your personal information or data to anyone for marketing

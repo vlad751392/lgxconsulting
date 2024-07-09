@@ -16,19 +16,19 @@ export const ShipRates = () => {
 
 
     return (
-        <section className='my-11 p-6 sm:px-0 container xl:max-w-[1245px]'>
+        <section className='my-11 p-6 sm:px-0 container xl:max-w-[1100px] 2xl:max-w-[1245px]'>
             <div>
                 <h2 className='text-adptive-l font-bold pt-10'>Ship with the lowest rates.</h2>
                 <AnimatedText className='text-xl lg:text-2xl xl:w-3/4' text='<span>We&apos;re able to negotiate the best rates because of our shipping volume,</span><span>which we pass on to our customers.</span>' />
             </div>
             <div className='flex flex-col lg:flex-row border-t border-gray-secondary pt-16'>
-            <div className='bg-blue-regular p-10 lg:w-[390px] gap-3 flex flex-col rounded-2xl text-white relative overflow-hidden shadow-custom'>
+            <div className='bg-blue-regular p-10 lg:w-[380px] gap-3 flex flex-col rounded-2xl text-white relative overflow-hidden shadow-custom'>
                 <div className='absolute top-[-260px] left-[142px]'>
                     <Lottie options={defaultOptions} height={550} width={550} />
                 </div>
                 <Box fill='#fff' />
-                <p className='text-2xl leading-none'>Axel Ship</p>
-                <p className='text-[74px] leading-none'>Free</p>
+                <p className='text-2xl leading-none'>LGX Consulting</p>
+                <p className='text-adptive-l leading-none'>Free</p>
                 <ul className='list-dot pt-4'>
                     <li>Unlimited shipments</li>
                     <li>No minimums</li>
@@ -53,10 +53,10 @@ export const ShipRates = () => {
                     </div>
                 </div>
             </div>
-            <div className='p-10 lg:ml-10 ml-0 lg:w-[390px] gap-3 flex flex-col rounded-2xl relative overflow-hidden'>
+            <div className='p-10 lg:ml-10 ml-0 lg:w-[373px] gap-3 flex flex-col rounded-2xl relative overflow-hidden'>
                 <Box />
                 <p className='text-2xl leading-none pb-4'>ShipStation</p>
-                <p className='text-[74px] leading-none font-bold'><sup className='text-[50%] align-[unset] top-[-1em]'>$</sup>99/<span className='text-[26px]'> month</span></p>
+                <p className='text-adptive-l leading-none font-bold'><sup className='text-[50%] align-[unset] top-[-1em]'>$</sup>99/<span className='text-[26px]'> month</span></p>
                 <ul className='list-dot pt-4'>
                     <li>Up to 2k shipments
                     </li>
@@ -70,7 +70,7 @@ export const ShipRates = () => {
             <div className='p-10 lg:w-[390px] gap-3 flex flex-col rounded-2xl relative overflow-hidden'>
                 <Box />
                 <p className='text-2xl leading-none pb-4'>Shippo</p>
-                <p className='text-[74px] leading-none font-bold'><sup className='text-[50%] align-[unset] top-[-1em]'>$</sup>19/<span className='text-[26px]'> month</span></p>
+                <p className='text-adptive-l leading-none font-bold'><sup className='text-[50%] align-[unset] top-[-1em]'>$</sup>19/<span className='text-[26px]'> month</span></p>
                 <ul className='list-dot pt-4'>
                     <li>Up to 31 shipments per month
                     </li>

@@ -7,7 +7,7 @@ export const Integrations = () => {
     <article className="flex flex-col items-center">
       <TopBlock />
       {/* <ParallaxBlock /> */}
-      {/*<BrandCarts /> */}
+      <BrandCarts />
       
     </article>
   );

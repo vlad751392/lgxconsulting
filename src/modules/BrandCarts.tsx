@@ -4,8 +4,8 @@ import { carts } from "./configs/BrandCards";
 export const BrandCarts = () => {
   return (
     <article>
-      <section className="container mx-auto">
-        <div className="flex flex-wrap max-w-[1245px] gap-[30px]">
+      <section className="container mx-auto px-6 my-16 sm:px-0">
+        <div className="flex flex-wrap container xl:max-w-[1100px] 2xl:max-w-[1245px] gap-[30px]">
           {carts.map((cart: Carts) => (
             <div className="flex flex-col min-w-[230px] flex-1 bg-[#f6f6f6] p-7 rounded-3xl gap-6">
               <img className="w-170 h-70 mx-auto" src={cart.photo} alt="Icon" />

@@ -101,7 +101,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #3c83e0;
   }
   button {
     background-color: #f9f9f9;
@@ -133,7 +133,7 @@ button:focus-visible {
   font-size: 26px;
   width: 13px;
   height: 1px;
-  background-color: #016AF4;
+  background-color: #3c83e0;
 }
 
 .line-list> li {
@@ -315,7 +315,20 @@ button:focus-visible {
 .react-parallax {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  will-change:transform;
   height: 500px;
+}
+
+.react-parallax img {
+  will-change:transform;
+}
+
+@media (max-width: 620px) {
+  .react-parallax {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 300px;
+  }
 }
 
 /* Добавьте этот CSS-код в ваш файл стилей */
@@ -368,4 +381,46 @@ button:focus-visible {
 
 .translate-x-full {
   transform: translateX(100%);
+}
+
+.link_text {
+  /* Your styles for the link container */
+}
+
+.link_text .text {
+  /* Styles for the text inside the link */
+}
+
+.animated-svg {}
+
+.animated-svg:hover {
+  animation: yourAnimationName .45s cubic-bezier(.23, .46, .4, 1) forwards;
+  /* Additional styles for the SVG arrow */
+}
+
+.link_text .animated-line {
+  stroke-dashoffset: 10px;
+  stroke-dasharray: 150px 150px;
+  opacity: 0;
+  /* Styles for the animated line */
+}
+
+button:focus {
+  outline: none !important;
+}
+
+/* Keyframes for animation */
+@keyframes yourAnimationName {
+  0% {
+    transform: translateY(calc(-50% + .5px)) translateX(0) translateZ(0);
+}
+100% {
+    transform: translateY(calc(-50% + .5px)) translateX(-3px) translateZ(0);
+}
+}
+
+@media (min-width: 1281px) {
+  .hide-anim {
+      display: block;
+  }
 }

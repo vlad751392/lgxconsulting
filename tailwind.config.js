@@ -4,25 +4,30 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        "adptive-m": "calc(23px + 6 * (100vw /1280))",
+        "adptive-m": "calc(21px + 6 * (100vw /1280))",
         "adptive-ml": "calc(29px + 10 * (100vw /1280))",
         "adptive-l": "calc(35px + 14 * (100vw /1280))",
+        "adptive-2l": "calc(38px + 16 * (100vw /1280))",
+        "adptive-xl": "calc(50px + 17 * (100vw /1280))",
       },
       colors: {
         pink: {
           regular: "#FFDDF6",
         },
         blue: {
-          regular: "#016AF4",
+          regular: "#3c83e0",
+          secondary: "#0a063b",
         },
         gray: {
           regular: "#f6f6f6",
           secondary: "#564F68",
           divider: "#e1e1e1",
+          text: "#00000080",
         },
       },
       boxShadow: {
         'custom': '40px 60px 60px -20px rgba(0,0,0,0.175)',
+        'button': '0 20px 38px rgba(0,0,0,.16)',
       },
     },
     fontFamily: {

@@ -1,15 +1,15 @@
 
 const TermsOfService = () => {
   return (
-    <article className="flex px-[5%] flex-col xl:pr-[30%] xl:pl-[10%] pt-[5%] gap-14">
+    <article className="flex mx-auto xl:max-w-[1100px] 2xl:max-w-[1245px] flex-col py-28 gap-14 sm:px-0 px-6">
       <h2 className="text-5xl font-bold">Terms of Use</h2>
-      <p className="text-[17px] ">Last Modified: May 2, 2021</p>
+      <p className="text-[17px] ">Last Modified: July 9, 2024</p>
       <p className="text-[17px]">
         BY USING THIS WEBSITE OR PURCHASING ANY SERVICES THROUGH THIS WEBSITE,
         YOU MUST AGREE TO THE FOLLOWING:
       </p>
       <p className="text-[17px]">
-        AGREEMENT BETWEEN CUSTOMER AND AXEL SHIP INC.
+        AGREEMENT BETWEEN CUSTOMER AND LGX Consulting INC.
       </p>
       <p className="text-[17px]">
         Our website (“Website”) is provided solely to assist customers in
@@ -17,7 +17,7 @@ const TermsOfService = () => {
         “Courier”) services (“Services”) for the legal shipping of documents and
         goods nationally and internationally or otherwise transacting business
         with courier services, and for no other purposes. The terms “we,” “us,”
-        “our” and “Axel Ship” refer to Axel Ship Inc., and its subsidiaries and
+        “our” and “LGX Consulting” refer to LGX Consulting Inc., and its subsidiaries and
         corporate affiliates. The term “you” refers to the customer visiting the
         Website and/or purchasing third-party courier services through us on
         this Website, or through our partners and customer service agents.
@@ -35,13 +35,13 @@ const TermsOfService = () => {
         courier services through this Website or our call center agents.
       </p>
       <p className="text-[17px]">
-        Axel Ship serves only as an intermediary between you and Couriers,
+        LGX Consulting serves only as an intermediary between you and Couriers,
         providing you with a platform to order Services, and will not become a
         party to any contract to pick up, transport, ship, deliver, or otherwise
         provide any service beyond simply reselling such Services.
       </p>
       <p className="text-[17px]">
-        Axel Ship may, from time to time, amend or modify these Terms of Use
+        LGX Consulting may, from time to time, amend or modify these Terms of Use
         (these “Terms”) and post the amended or modified Terms on the Website,
         which will automatically be effective five (5) business days after being
         posted. If at any time you do not agree to be bound by and comply with

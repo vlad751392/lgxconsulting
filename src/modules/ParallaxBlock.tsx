@@ -17,14 +17,14 @@ export const ParallaxBlock: React.FC<AnimatedTextProps> = ({ img }) => {
       };
 
     return (
-      <article className="xl:max-w-[1245px] rounded-3xl  opacity-0 animate-appearsFromBottomLong my-8 container">
+      <article className="xl:max-w-[1100px] 2xl:max-w-[1245px] rounded-3xl  opacity-0 animate-appearsFromBottomLong my-8 container">
 
         <Parallax
           className=""
           bgImage={img}
           strength={300}    
         >
-            <div style={{ height: 400 }} />
+            <div style={{ height: 100 }} />
         </Parallax>
       </article>
     );

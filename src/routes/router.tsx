@@ -10,6 +10,7 @@ import Shipping from "pages/Shipping";
 import LtlShipping from "pages/LtlShipping";
 import Pricing from "pages/Pricing";
 import Forwarding from "pages/Forwarding";
+import Carrier from "pages/Carrier";
 import TermsOfService from "pages/TermsOfService";
 import PrivacyPolicy from "pages/PrivacyPolicy";
 
@@ -61,6 +62,14 @@ const routes = [
   {
     element: <PrivacyPolicy />,
     path: "/privacy-policy",
+  },
+  {
+    element: <Carrier />,
+    path: "/carriers",
+  },
+  {
+    element: <Home />, // Добавьте маршрут для NotFound
+    path: "*",
   },
 ];
 

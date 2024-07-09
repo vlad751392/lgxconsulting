@@ -8,7 +8,7 @@ type ContentBlockProps = {
 
 export const ContentBlock = (props: ContentBlockProps) => {
   return (
-    <article className="container xl:max-w-[1245px] my-7">
+    <article className="container xl:max-w-[1100px] 2xl:max-w-[1245px] my-7">
       <section
         className={`flex ${
           props.imgPosition === "right"

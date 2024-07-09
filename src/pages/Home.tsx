@@ -5,14 +5,15 @@ import { BannerBlock } from "modules/BannerBlock";
 import { StartShipping } from "modules/StartShipping";
 import { HomeLogosList } from "modules/HomeLogosList";
 import { ShipRates } from "modules/ShipRates";
-import circles from "../assets/jpeg/integrations-circles.jpg";
+import circles from "../assets/png/integration.png";
 import { ContentBlock } from "modules/ContentBlock";
 import Button from "src/components/Button";
 
 
 export const Home = () => {
   return (
-    <article className="flex flex-col items-center">
+    <article className="flex flex-col items-center px-5 sm:px-0">
+      
       <ShippingSolutions />
       <HomeLogosList />
     
@@ -25,7 +26,7 @@ export const Home = () => {
           <p className="text-[17px]">
             Our solution directly integrates with Shipping Platforms, eCommerce Platforms, Warehouse Management systems, and custom WMS/ERP Systems through our global shipping API.
           </p>
-          <Button className="w-[193px] h-[53px] text-[13px]" label="See All Integrations" />
+          <Button nav="/integration" className="w-[193px] h-[53px] text-[13px]" label="See All Integrations" />
         </section>
       </ContentBlock>
       <BannerBlock />

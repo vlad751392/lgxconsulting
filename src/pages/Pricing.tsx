@@ -1,19 +1,15 @@
-import { BrandCarts } from "modules/BrandCarts";
-import { ParallaxBlock } from "modules/ParallaxBlock";
-import { TopBlock } from "modules/TopBlock";
 import { JoinForm } from "modules/JoinForm";
 import { AanimatedList } from "src/components/AanimatedList";
 
-
 export const Pricing = () => {
     return (
-        <article className="flex flex-col items-center">
-            <h2>Request a Quote</h2>
-            <h4>Compare rates to see how much you can save.</h4>
-            <section className="flex gap-20 xl:min-w-[1245px]">
-                <div className="w-2/4 ">
+        <article className="px-5 sm:px-0 flex flex-col items-center mb-16 xl:max-w-[1100px] 2xl:max-w-[1245px] container mx-auto">
+            <h2 className="text-adptive-ml font-bold self-start pt-16 pb-5">Request a Quote</h2>
+            <h4 className="text-2xl font-bold self-start pb-20">Compare rates to see how much you can save.</h4>
+            <section className="flex lg:flex-row flex-col gap-20 container xl:max-w-[1100px] 2xl:max-w-[1245px]">
+                <div className="w-full lg:w-2/4">
                     <AanimatedList adapted />
-                    <div className="flex gap-16 border-t border-gray-divider pt-10 pl-2">
+                    <div className="flex gap-20 mt-14 border-t border-gray-divider pt-10 pl-2">
                         <ul className="line-list">
                             <li>Free platform (forever)</li>
                             <li>Unlimited label volume</li>
@@ -27,9 +23,8 @@ export const Pricing = () => {
                 <JoinForm />
             </section>
             {/* <TopBlock /> */}
-            {/*<ParallaxBlock />
-      <BrandCarts /> */}
-
+            {/* <ParallaxBlock /> */}
+            {/* <BrandCarts /> */}
         </article>
     );
 };

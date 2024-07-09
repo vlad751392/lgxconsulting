@@ -2,17 +2,19 @@ import { ContentBlock } from "modules/ContentBlock";
 import comprehensive from "../assets/jpeg/comprehensive-3pl.jpg";
 import Button from "src/components/Button";
 import IconsList from "src/components/IconsList";
+import expand from "../assets/jpeg/expand-your-business.jpg";
+import regional from "../assets/jpeg/regional-delivery.jpg";
 import { iconsList } from "modules/configs/IconsListConfig";
 import { StartShipping } from "modules/StartShipping";
 import BannerBlock from "modules/BannerBlock";
 import TopContentBlock from "modules/TopContentBlock";
 import ParallaxBlock from "modules/ParallaxBlock";
-import Bg from '../assets/jpeg/hero-3pl.jpg'
+import Bg from '../assets/jpeg/hero-3pl.jpeg'
 
 
 const Fulfilment = () => {
   return (
-    <article className="flex flex-col items-center">
+    <article className="flex flex-col items-center px-6 sm:px-0">
       <TopContentBlock title="3PL and Warehousing" text="<span>Inventory Management and Minimize</span><span>Holding Costs with the Expertise of 3PL</span><span>Services, Ensuring Seamless Warehousing</span><span>and Distribution.</span>" />
       <ParallaxBlock img={Bg} />
       <ContentBlock img={comprehensive} imgPosition="right">
@@ -22,7 +24,7 @@ const Fulfilment = () => {
           </h2>
           <h3 className="text-[17px] ">
             Managing order fulfillment as an eCommerce business owner can be
-            time-consuming. Axel Ship offers expert 3PL services to simplify
+            time-consuming. LGX Consulting offers expert 3PL services to simplify
             your shipping process and improve efficiency, allowing you to focus
             on day-to-day operations. <br />
             <br />
@@ -32,7 +34,7 @@ const Fulfilment = () => {
         </section>
       </ContentBlock>
 
-      <ContentBlock img={comprehensive} imgPosition="left">
+      <ContentBlock img={expand} imgPosition="left">
         <section className="flex flex-col gap-6">
           <h2 className="text-5xl font-bold">
             Expanding Your eCommerce Business
@@ -50,7 +52,7 @@ const Fulfilment = () => {
           <Button label="Get In Touch" className="w-[150px] text-[13px]" />
         </section>
       </ContentBlock>
-      <ContentBlock img={comprehensive} imgPosition="right">
+      <ContentBlock img={regional} imgPosition="right">
         <section className="flex flex-col gap-6">
           <h2 className="text-5xl font-bold">Solutions that Save</h2>
           <h3 className="text-[17px] ">
@@ -69,7 +71,7 @@ const Fulfilment = () => {
           <Button label="Get In Touch" className="w-[150px] text-[13px]" />
         </section>
       </ContentBlock>
-      <IconsList config={iconsList} />
+      <IconsList title="Full Range of 3PL Services" config={iconsList} />
       <StartShipping />
       <BannerBlock />
     </article>

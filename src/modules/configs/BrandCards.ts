@@ -146,13 +146,6 @@ export const carts: Carts[] = [
       "Etsy is DIY Headquarters. Personalized Gifts. Handmade & Vintage Items. One-of-a-Kind Community.",
   },
   {
-    id: 15,
-    photo: freePlatform,
-    title: "Free Platform",
-    description:
-      "A free platform providing tools and features for your eCommerce needs.",
-  },
-  {
     id: 16,
     photo: fulfillmentCom,
     title: "Fulfillment.com",

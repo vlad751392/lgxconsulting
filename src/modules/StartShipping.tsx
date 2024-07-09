@@ -9,9 +9,11 @@ type StartShippingProps = {
 };
 
 export const StartShipping = (props: StartShippingProps) => {
+    
+
     return (
-        <article className="bg-[#f6f6f6] w-full">
-            <section className='container xl:max-w-[1245px] mx-auto gap-10 sm:gap-20 flex flex-col py-14 sm:py-28 px-6 sm:px-0'>
+        <article className="bg-[#f6f6f6] w-[100vw] sm:w-full">
+            <section className='container xl:max-w-[1100px] 2xl:max-w-[1245px] mx-auto gap-10 sm:gap-20 flex flex-col py-14 sm:py-28 px-6 sm:px-0'>
                 <h3 className='text-adptive-ml font-bold'>How to get started</h3>
                 <AanimatedList />
                 {/* <div className={cn("input", {
@@ -30,7 +32,7 @@ export const StartShipping = (props: StartShippingProps) => {
                     ))
                     }
                 </div> */}
-                <Button className='w-36 h-12 text-[13px]' label='Get Started' />
+                <Button nav='/pricing' className='w-36 h-12 text-[13px]' label='Get Started' />
             </section>
         </article>
     );

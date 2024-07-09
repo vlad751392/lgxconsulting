@@ -1,74 +1,66 @@
 import { ContentBlock } from "modules/ContentBlock";
-import comprehensive from "../assets/jpeg/comprehensive-3pl.jpg";
+import shipping from "../assets/jpeg/ltl-shipping-trucking.jpg";
+import ltlShipping from "../assets/jpeg/ltl-shipping.jpg";
+import ltl2 from "../assets/jpeg/ltl-2.jpg";
 import Button from "src/components/Button";
 import IconsList from "src/components/IconsList";
-import { iconsList } from "modules/configs/IconsListConfig";
+import { iconsList, iconsListLtl } from "modules/configs/IconsListConfig";
 import { StartShipping } from "modules/StartShipping";
 import BannerBlock from "modules/BannerBlock";
 import TopContentBlock from "modules/TopContentBlock";
 import ParallaxBlock from "modules/ParallaxBlock";
-import Bg from '../assets/jpeg/hero-ltl.jpg'
+import Bg from '../assets/jpeg/hero-ltl.jpeg'
 
 const Shipping = () => {
   return (
-    <article className="flex flex-col items-center">
+    <article className="flex flex-col items-center px-6 sm:px-0">
       <TopContentBlock title="Maximize Savings with LTL Shipping" text="<span>Streamlined Delivery Solutions for</span><span>eCommerce, D2C, and B2B: Seamless</span><span>Large Parcel Transport.</span>" />
       <ParallaxBlock img={Bg} />
-      <ContentBlock img={comprehensive} imgPosition="right">
+      <ContentBlock img={ltlShipping} imgPosition="right">
         <section className="flex flex-col gap-6">
           <h2 className="text-5xl font-bold">
-            Comprehensive Third-Party Logistics (3PL)
+          What Is LTL Shipping?
           </h2>
-          <h3 className="text-[17px] ">
-            Managing order fulfillment as an eCommerce business owner can be
-            time-consuming. Axel Ship offers expert 3PL services to simplify
-            your shipping process and improve efficiency, allowing you to focus
-            on day-to-day operations. <br />
-            <br />
-            Our comprehensive solutions encompass distribution, warehousing, and
-            fulfillment, making us your go-to logistics partner.
-          </h3>
+          <h3>Efficient Solutions for Small Package and Freight Transportation: Unlock Savings with Less-than-Truckload (LTL) Shipping. Seamlessly share trailer space, known as capacity sharing, to maximize cost-effectiveness while enjoying a range of added advantages tailor-made for small businesses.</h3>
+          <ul className="list-disc ml-6">
+            <li>Small package and freight transportation</li>
+            <li>Cost-effective LTL shipping</li>
+            <li>Capacity sharing benefits</li>
+            <li>Efficient solutions for businesses</li>
+            <li>Maximizing savings and advantages</li>
+          </ul>
+          
         </section>
       </ContentBlock>
 
-      <ContentBlock img={comprehensive} imgPosition="left">
+      <ContentBlock img={shipping} imgPosition="left">
         <section className="flex flex-col gap-6">
           <h2 className="text-5xl font-bold">
-            Expanding Your eCommerce Business
+          Business Benefits with LTL
           </h2>
           <h3 className="text-[17px] ">
-            Partnering with our 3PL service providers opens doors for market
-            expansion and business growth. Streamlined logistics processes
-            enhance customer satisfaction while ensuring the protection and
-            security of your goods, reducing risks. <br />
-            <br />
-            With efficient inventory management, you gain flexible options to
-            scale your eCommerce business, introduce new products, explore
-            emerging markets, and achieve even more.
+          Unlock the Benefits of LTL Shipping: Your Ideal Choice for eCommerce, Small Businesses, and Small Shipments. Experience Remarkable Cost Savings through Capacity Sharing, paying only for the trailer space you utilize. Enhance Package Security with Palletized or Crated Goods. Enjoy Added Flexibility with Expedited Shipping, Lift Gate, Tracking, and More for a Convenient LTL Shipping Experience.
           </h3>
           <Button label="Get In Touch" className="w-[150px] text-[13px]" />
         </section>
       </ContentBlock>
-      <ContentBlock img={comprehensive} imgPosition="right">
+      <ContentBlock img={ltl2} imgPosition="right">
         <section className="flex flex-col gap-6">
-          <h2 className="text-5xl font-bold">Solutions that Save</h2>
+          <h2 className="text-5xl font-bold">Scale with LTL Shipping</h2>
           <h3 className="text-[17px] ">
-            Customized Solutions for Your Business: We tailor our services to
-            fit your needs. Trust us with your eCommerce fulfillment, freeing up
-            your time for growth. Our secure warehousing ensures protected and
-            trackable goods.
+          Accelerate Your Business Expansion with Streamlined LTL Shipping Solutions. Seamlessly Scale Without Missing a Step. Instant Rates, Reliable Carrier Network, and Transparent Communication from Our Dedicated Logistics Team Ensure Smooth Operations and Rapid Growth.
           </h3>
           <ul className="list-disc ml-6">
-            <li>We receive</li>
-            <li>Store</li>
-            <li>Pick and pack</li>
-            <li>Track, ship, and deliver</li>
+            <li>Fast and straightforward LTL shipping</li>
+            <li>Seamless business growth</li>
+            <li>Transparent communication</li>
+            <li>Dedicated logistics support</li>
           </ul>
           <h3>Our vast network of partners can do it all.</h3>
           <Button label="Get In Touch" className="w-[150px] text-[13px]" />
         </section>
       </ContentBlock>
-      <IconsList config={iconsList} />
+      <IconsList title="Specialized Services" config={iconsListLtl} />
       <StartShipping />
       <BannerBlock />
     </article>

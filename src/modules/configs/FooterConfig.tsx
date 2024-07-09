@@ -39,7 +39,7 @@ export const ServiceList: FooterList[] = [
   {
     id: 6,
     name: "Regional Parcel Carriers",
-    path: "/about",
+    path: "/carriers",
     nav: true,
   },
 ];
@@ -48,13 +48,13 @@ export const CompanyList: FooterList[] = [
   {
     id: 1,
     name: "Integrations",
-    path: "/about",
+    path: "/integrations",
     nav: true,
   },
   {
     id: 2,
     name: "Pricing",
-    path: "/about",
+    path: "/pricing",
     nav: true,
   },
   {
@@ -68,14 +68,14 @@ export const CompanyList: FooterList[] = [
 export const ContactList: FooterList[] = [
   {
     id: 1,
-    name: "(833) AXL-SHIP",
-    path: "/about",
+    name: "844-549-7447",
+    path: "tel:844-549-7447",
     nav: false,
   },
   {
     id: 2,
     name: "Email",
-    path: "/about",
+    path: "mailto:support@lgxconsulting.com",
     nav: false,
   },
   {
